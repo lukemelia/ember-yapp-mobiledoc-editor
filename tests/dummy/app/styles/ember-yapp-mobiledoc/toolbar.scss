@@ -1,0 +1,199 @@
+%medium-toolbar-arrow {
+    border-style: solid;
+    content: '';
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -8px;
+    position: absolute;
+    width: 0;
+}
+
+.medium-toolbar-arrow-under:after {
+    @extend %medium-toolbar-arrow;
+    border-width: 8px 8px 0 8px;
+    bottom: -7px;
+}
+
+.medium-toolbar-arrow-over:before {
+    @extend %medium-toolbar-arrow;
+    border-width: 0 8px 8px 8px;
+    top: -8px;
+}
+
+.YappMobiledocLinkPrompt,
+.YappMobiledocToolbar {
+  font-family: 'verdana,helvetica,sans-serif';
+  font-size: 16px;
+  background-color: #242424;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #000;
+  z-index: 150;
+}
+
+.YappMobiledocLinkPrompt {
+  padding: 8px;
+  input {
+    width: 270px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 1px inset #fff;
+    font-size: 13px;
+  }
+  &.medium-toolbar-arrow-under::after {
+    bottom: -7px;
+  }
+}
+
+.YappMobiledocLinkPrompt button,
+.YappMobiledocToolbar li button {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  line-height: 1.33;
+  margin: 0;
+  padding: 15px;
+  text-decoration: none;
+  background-color: #242424;
+  border: 0;
+  border-right: 1px solid #000;
+  border-left: 1px solid #333;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  height: 50px;
+  min-width: 50px;
+  -webkit-transition: background-color .2s ease-in;
+          transition: background-color .2s ease-in;
+  &:hover {
+    background-color: #000;
+    color: yellow;
+  }
+  &:active {
+    background-color: #111;
+    color: #eee;
+  }
+  &.active {
+    background-color: #111;
+  }
+  &:focus {
+    outline: 1px solid rgba(255,255,255,0.3);
+  }
+}
+.YappMobiledocLinkPrompt button {
+  display: inline-block;
+  padding: 5px 15px;
+  height: auto;
+}
+
+.YappMobiledocToolbar {
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+
+    ul {
+      padding: 0;
+      height: 50px;
+      margin: 0;
+    }
+
+    li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .medium-editor-action-underline {
+            text-decoration: underline;
+        }
+
+        .medium-editor-action-link {
+          text-decoration: underline;
+          font-size: 0.75rem;
+        }
+
+        .medium-editor-action-pre {
+            font-family: monospace;
+            font-size: 12px;
+            font-weight: 100;
+            padding: 15px 0;
+        }
+    }
+
+
+    li .medium-editor-button-first {
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+    }
+    li .medium-editor-button-last {
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    li .medium-editor-button-active {
+      background-color: #242424;
+      color: #fff;
+    }
+}
+
+.medium-editor-toolbar-active {
+    visibility: visible;
+}
+
+.medium-editor-sticky-toolbar {
+    position: fixed;
+    top: 1px;
+}
+
+.medium-editor-relative-toolbar {
+  position: relative;
+}
+
+.medium-editor-toolbar-active.medium-editor-stalker-toolbar {
+    animation: medium-editor-pop-upwards 160ms forwards linear;
+}
+
+// .medium-editor-toolbar-actions {
+//     @extend %clearfix;
+// }
+
+.medium-editor-action-bold {
+    font-weight: bolder;
+}
+
+.medium-editor-action-italic {
+    font-style: italic;
+}
+
+.medium-toolbar-arrow-under:after {
+  border-color: #242424 transparent transparent transparent;
+  bottom: -7px;
+}
+
+.medium-toolbar-arrow-over:before {
+  border-color: transparent transparent #242424 transparent;
+  top: -8px; }
+
+.medium-editor-toolbar-form {
+  background: #242424;
+  border-radius: 5px;
+  color: #999; }
+  .medium-editor-toolbar-form .medium-editor-toolbar-input {
+    background: #242424;
+    box-sizing: border-box;
+    color: #ccc;
+    height: 50px; }
+  .medium-editor-toolbar-form a {
+    color: #fff; }
+
+.medium-editor-toolbar-anchor-preview {
+  background: #242424;
+  border-radius: 5px;
+  color: #fff; }
+
+.medium-editor-placeholder:after {
+  color: #b3b3b1; }

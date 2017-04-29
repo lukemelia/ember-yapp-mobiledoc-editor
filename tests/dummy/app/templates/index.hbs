@@ -1,0 +1,14 @@
+<div class="example">
+  <div class="example-editor">
+    {{#yapp-mobiledoc-editor
+        mobiledoc=myMobileDoc
+        on-change=(action 'mobiledocWasUpdated')
+      as |editor|
+    }}
+      {{yapp-mobiledoc-toolbar editor=editor}}
+    {{/yapp-mobiledoc-editor}}
+  </div>
+  <div class="example-renderer">
+    {{render-mobiledoc mobiledoc=myMobileDoc}}
+  </div>
+</div>

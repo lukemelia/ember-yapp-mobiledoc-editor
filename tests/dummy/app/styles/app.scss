@@ -1,0 +1,17 @@
+.example {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+.example-editor,
+.example-renderer {
+  min-height: 300px;
+  border: 1px solid red;
+  padding: 10px;
+}
+.mobiledoc-editor__editor {
+  min-height: 300px;
+}
+
+@import './ember-yapp-mobiledoc/toolbar.scss';
